@@ -1,14 +1,10 @@
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 import chromedriver_binary
 import time
 import random
 
-body_temp = str(36 + random.randint(1,9)/10)
-url = 'https://docs.google.com/forms/d/e/1FAIpQLScGgZ8dsBkcSVutvW3JgDLqy3pIEKk12ucjiA8mNQrKopILog/viewform?usp=pp_url&entry.1534939278=%E5%85%AB%E8%B0%B7%E8%88%AA%E5%A4%AA&entry.511939456='+body_temp
+body_temp = str(36 + random.randint(1,7)/10)
+url = 'https://docs.google.com/forms/d/e/1FAIpQLScGgZ8dsBkcSVutvW3JgDLqy3pIEKk12ucjiA8mNQrKopILog/viewform?usp=pp_url&entry.1534939278=荒川智則&entry.511939456='+body_temp
 
 def click(xpath):
     driver.find_element_by_xpath(xpath).click()

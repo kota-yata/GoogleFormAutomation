@@ -5,7 +5,7 @@ import random
 
 def lambda_handler(event, context):
     body_temp = str(36 + random.randint(1,7)/10)
-    url = 'https://docs.google.com/forms/d/e/1FAIpQLScGgZ8dsBkcSVutvW3JgDLqy3pIEKk12ucjiA8mNQrKopILog/viewform?usp=pp_url&entry.1534939278=%E5%85%AB%E8%B0%B7%E8%88%AA%E5%A4%AA&entry.511939456='+body_temp
+    url = 'https://docs.google.com/forms/d/e/1FAIpQLScGgZ8dsBkcSVutvW3JgDLqy3pIEKk12ucjiA8mNQrKopILog/viewform?usp=pp_url&entry.1534939278=荒川智則&entry.511939456='+body_temp
     options = webdriver.ChromeOptions()
     options.binary_location = '/opt/headless-chrome/headless-chromium'
     options.add_argument('--headless')

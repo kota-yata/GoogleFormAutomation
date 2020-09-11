@@ -1,5 +1,6 @@
 # GoogleFormAutomation
-Automatically answer my Google Form
+Googleフォーム提出を自動化
+Lambdaと連携して定期イベント化しています
 
 # How to use
 #### Local
